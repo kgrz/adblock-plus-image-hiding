@@ -36,3 +36,14 @@ If your adblocker doesn't do the same thing that ABP <3.4.1 did, you
 should be able to see the placeholder image in 2s. In ABP <3.4.1, the
 image does load (there'll be a network call and the `<img>` tag's
 `onload` handler gets called), but gets hidden by ABP.
+
+
+To install the ABP version that does this:
+
+I've included an unsigned version of the extension built from the [ABP
+GitHub repo](https://github.com/adblockplus/adblockpluschrome/) at
+commit [4ca0b47](https://github.com/adblockplus/adblockpluschrome/commit/4ca0b4://github.com/adblockplus/adblockpluschrome/commit/4ca0b47)
+
+1. Download the folder under `ext`, unzip it
+2. Turn on "Developer Mode" in [chrome://extensions](chrome://extensions)
+3. Load the unpacked extension
