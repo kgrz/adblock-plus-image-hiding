@@ -46,3 +46,5 @@ commit [4ee6005](https://github.com/adblockplus/adblockpluschrome/commit/4ee6005
 1. Download the folder under `ext`, unzip it
 2. Turn on "Developer Mode" in [chrome://extensions](chrome://extensions)
 3. Load the unpacked extension
+
+I've put up a CodeSandbox for the code in this repo: https://codesandbox.io/embed/xpp8zqk5ow?fontsize=14
