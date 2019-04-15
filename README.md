@@ -4,10 +4,9 @@ Adblocker Plus + invalid image issue example
 The issue:
 ---------
 
-Adblocker Plus (ABP), as of version 3.4.1 (not reproducible in 3.4.2 as far
-as I checked), hides an image that originally had a `src` attribute set
-to a non-spec-compliant value, but then gets changed to a valid URL
-later (think lazy loading).
+Adblocker Plus (ABP), version 3.4.2 or less, hides an image that
+originally had a `src` attribute set to a non-spec-compliant value, but
+then gets changed to a valid URL later (think lazy loading).
 
 However, this is not a blanket issue across all images loaded this way.
 This only happens if the original URL has a fragment that matches a
@@ -32,8 +31,8 @@ And open the link:
 
 [http://localhost:1234/?a=123&videoadid=123](http://localhost:1234/?a=123&videoadid=123)
 
-If your adblocker doesn't do the same thing that ABP <3.4.1 did, you
-should be able to see the placeholder image in 2s. In ABP <3.4.1, the
+If your adblocker doesn't do the same thing that ABP <= 3.4.2 did, you
+should be able to see the placeholder image in 2s. In ABP <= 3.4.2, the
 image does load (there'll be a network call and the `<img>` tag's
 `onload` handler gets called), but gets hidden by ABP.
 
@@ -42,7 +41,7 @@ To install the ABP version that does this:
 
 I've included an unsigned version of the extension built from the [ABP
 GitHub repo](https://github.com/adblockplus/adblockpluschrome/) at
-commit [4ca0b47](https://github.com/adblockplus/adblockpluschrome/commit/4ca0b4://github.com/adblockplus/adblockpluschrome/commit/4ca0b47)
+commit [4ee6005](https://github.com/adblockplus/adblockpluschrome/commit/4ee6005)
 
 1. Download the folder under `ext`, unzip it
 2. Turn on "Developer Mode" in [chrome://extensions](chrome://extensions)
